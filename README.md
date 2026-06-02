@@ -3,25 +3,36 @@
 
 # Project Title
 
-Describe what your project is about and what it does
+This is for gathering statistics for bikeshare project.
 
 ## Information about how to use your project
 
-This could include:
+This include:
 
 - Step-by-step instructions for installing or setting up your project.
-- Any software dependencies that need to be installed.
-- Instructions and examples for how to use your project, including any helpful code snippets.
-- Common issues and troubleshooting tips
+- It requires python.
+
+## Files
+* bikeshare.py
+* new_york_city.csv
+* README.md
 
 ## Contribution guidelines
 
-If you welcome contributions, provide guidelines on how others can contribute to your project.
+To contribute follow below instrunctions
+
+* Fork the project
+* Clone the forked repo to your local
+* set up remote
+* create a new branch
+* make changes and commit
+* Push the changes and create a pull request
+* Submit the pull request
 
 ## Credits
 
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+It has been forked from Udacity.
 
 ## Date created
 
-Include the date you created this project and README file.
+31/05/2026
