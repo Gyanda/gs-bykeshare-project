@@ -29,7 +29,7 @@ def get_filters():
     if city.isalpha():
         print(f"You entered: {city}")
     else:
-        print("Invalid input. Please enter a valid city name (letters only).")
+        print("Invalid input entered. Please enter a valid city name (letters only).")
 
     # get user input for month (all, january, february, ... , june)
     def get_month():
@@ -49,7 +49,7 @@ def get_filters():
             print(f"You entered: {month.capitalize()}")
             return month.capitalize()
         else:
-            print("Invalid input. Please enter a valid month name.")
+            print("Invalid input entered. Please enter a valid month name.")
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
     def get_day_of_week():
@@ -69,7 +69,7 @@ def get_filters():
             print(f"You entered: {day.capitalize()}")
             return day.capitalize()
         else:
-            print("Invalid input. Please enter a valid day of the week.")
+            print("Invalid input entered. Please enter a valid day of the week.")
 
     print('-'*40)
     return city, month, day
