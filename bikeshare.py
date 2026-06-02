@@ -17,13 +17,59 @@ def get_filters():
     """
     print('Hello! Let\'s explore some US bikeshare data!')
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-
+    while True:
+    city = input("Enter a city name (or type 'exit' to quit): ").strip()
+    
+    # Exit condition
+    if city.lower() == "exit":
+        print("Goodbye!")
+        break
+    
+    # Validation: check if input is alphabetic and not empty
+    if city.isalpha():
+        print(f"You entered: {city}")
+    else:
+        print("Invalid input entered. Please enter a valid city name (letters only).")
 
     # get user input for month (all, january, february, ... , june)
-
+    def get_month():
+    months = [
+        "january", "february", "march", "april", "may", "june",
+        "july", "august", "september", "october", "november", "december"
+    ]
+    
+    while True:
+        month = input("Enter a month (or type 'exit' to quit): ").strip().lower()
+        
+        if month == "exit":
+            print("Goodbye!")
+            return None
+        
+        if month in months:
+            print(f"You entered: {month.capitalize()}")
+            return month.capitalize()
+        else:
+            print("Invalid input entered. Please enter a valid month name.")
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
-
+    def get_day_of_week():
+    days = [
+        "monday", "tuesday", "wednesday",
+        "thursday", "friday", "saturday", "sunday"
+    ]
+    
+    while True:
+        day = input("Enter a day of the week (or type 'exit' to quit): ").strip().lower()
+        
+        if day == "exit":
+            print("Goodbye!")
+            return None
+        
+        if day in days:
+            print(f"You entered: {day.capitalize()}")
+            return day.capitalize()
+        else:
+            print("Invalid input entered. Please enter a valid day of the week.")
 
     print('-'*40)
     return city, month, day
