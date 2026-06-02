@@ -14,6 +14,7 @@ This include:
 
 ## Files
 * bikeshare.py
+    Has three python function to get city, month and day of the week respectively as input from user.
 * new_york_city.csv
 * README.md
 
